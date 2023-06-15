@@ -1,0 +1,17 @@
+.TodoItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid rgb(102, 176, 229);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.TodoItem:hover {
+  background-color: rgb(102, 176, 229);
+  display: flex;
+  align-items: center;
+
+  border: 2px solid rgb(102, 176, 229);
+  border-radius: 5px;
+}
