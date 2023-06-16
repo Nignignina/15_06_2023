@@ -6,9 +6,70 @@
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: blue;
+  max-width: 300px;
+  min-width: 300px;
+  height: 400px;
+  margin: 10px;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(6, 16, 196) transparent;
 }
 .dataTodo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
+}
+
+.TodoList::-webkit-scrollbar {
+  width: 5px;
+}
+
+.TodoList::-webkit-scrollbar-track {
+  display: none;
+}
+
+.TodoList::-webkit-scrollbar-thumb {
+  background-color: #151994;
+}
+
+@media screen and (min-width: 100px) {
+  .TodoList {
+    background-color: #c8e0e4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    max-width: 400px;
+    min-width: 400px;
+    height: 600px;
+  }
+}
+
+.buttonWrapp .filter {
+  font-size: 12px;
+}
+
+.Button {
+  padding: 5px 8px;
+  background-color: blue;
+  color: blanchedalmond;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  height: 50%;
+}
+
+.num {
+  font-size: 16px;
+  height: 50%;
 }
